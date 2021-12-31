@@ -1,0 +1,93 @@
+/*
+#B155E6
+#8356E3
+#6B6CFA
+#5682E3
+#61C2FF
+*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2 {
+  font-weight: lighter;
+}
+.error {
+  color: rgb(233, 97, 97);
+}
+h1 {
+  color: #8356E3;
+  font-size: 35px;
+}
+h2 {
+  font-size: 30px;
+}
+h1, h2 {
+  display: inline;
+}
+.head{
+  text-align: center;
+}
+body {
+  color: #6B6CFA;
+}
+a {
+  color: inherit;
+}
+form {
+  font-size: 25px;
+  text-align: center;
+}
+input {
+  font-size: 25px;
+}
+hr {
+  border: none;
+  height: 3px;
+  width: 80%;
+  background: linear-gradient(to right, #B155E6, #61C2FF);
+}
+p {
+  margin: 10px;
+}
+input[type="text"], input[type="email"], input[type="password"] {
+  color: #6B6CFA;
+  border: none;
+  border-bottom: 2px solid #6B6CFA;
+  transition: 0.3s;
+}
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+  color: #8356E3;
+  border-bottom: 2px solid #8356E3;
+}
+/*Button style 1*/
+.special {
+  cursor: pointer;
+  text-align: center;
+  font-size: 25px;
+  background: white;
+  padding: 10px;
+  border: 2px solid;
+  border-radius: 5px;
+  background: white; /* default color */
+
+  /* "to left" / "to right" - affects initial color */
+  background: linear-gradient(to left, white 50%, #6B6CFA 50%) right;
+  /* Changed from 200 to 220 because otherwise it shows a bit of the other color at the edges on hover */
+  background-size: 220%;
+  transition: .4s ease-out;
+}
+/*https://stackoverflow.com/questions/17212094/fill-background-color-left-to-right-css*/
+.special:hover {
+  background-position: left;
+  color: white;
+}
+/*Button style 2*/
+.regular {
+  background: #6B6CFA;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 25px;
+  padding: 10px;
+}

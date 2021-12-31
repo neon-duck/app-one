@@ -1,0 +1,20 @@
+users:
+ - username, email, password, pp (optional) - firebase auth
+ - projects
+ - group
+
+groups:
+ - users
+ - projects
+
+projects:
+ - name
+ - creator / group
+ - images (optional)
+ - website (optional)
+ - source
+ - collaborating website
+ - views: the number of poeple who have clicked on it
+ - stars
+
+ * use github api to get project info, aka stars and README.md
